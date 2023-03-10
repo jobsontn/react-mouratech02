@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Timer from "./components/Exemplo1";
+import "./index.css";
 
 /* class OlaMundo extends React.Component{
     render(){
@@ -27,8 +28,8 @@ class Pagina01 extends React.Component{
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <div>
+    <>
         <Timer start={0} ms={1000}></Timer>
-        <Timer start={100} ms={500}></Timer>
-    </div>
+
+    </>
 );
