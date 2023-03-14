@@ -1,10 +1,15 @@
 import React from 'react';
 import Login from '../components/Login';
+import Menu from '../components/Menu';
 
 function LoginPage() {
   return (
-    <div className="h-screen w-screen bg-slate-200 flex items-center justify-center">
-      <Login />
+    <div>
+      <Menu />
+      <div className='flex items-center justify-center'>
+        <Login />
+      </div>
+
     </div>
   );
 }
