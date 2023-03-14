@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+<p align="center">
+    <img src="public/img/logo.png" width="100" alt="Logo Moura Tech"><br>
+    <img src="public/img/mouratech.png" width="200" alt="Logo Moura Tech">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Desenvolvedor Frontend - React 
 
-## Available Scripts
+Repositório de exemplo feitos em aulas na turma 02 do projeto MouraTech (Parceria IFPE - Moura - FADE).
 
-In the project directory, you can run:
+### Vídeos
 
-### `npm start`
+[Código Fonte TV - Caminhos para ser um DEV FRONT-END em 2023](https://www.youtube.com/watch?v=30nlBGjPRYM&t=270s)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Código Fonte TV - React JS // Dicionário do Programador](https://www.youtube.com/watch?v=NhUr8cwDiiM)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Filipe Dechamps - Se Você Passar Por Esses 5 Desafios, Você Aprendeu React JS](https://www.youtube.com/watch?v=aJR7f45dBNs)
 
-### `npm test`
+[Filipe Dechamps - Next.js](https://www.youtube.com/watch?v=EW7m2WIvFgQ&list=PLMdYygf53DP7FJzPslLnmqp0QylyFfA8a)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Links Úteis
 
-### `npm run build`
+[React](https://pt-br.reactjs.org/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[NEXT.js](https://nextjs.org/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[tailwindcss](https://tailwindcss.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[React Icons](https://react-icons.github.io/react-icons/)
 
-### `npm run eject`
+[chakra.ui](https://chakra-ui.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[Material-UI](https://mui.com/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[ReactTour](https://reactour.vercel.app/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Aulas
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Conteúdo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>27/02/2023</td>
+      <td>
+        <b>Versionamento de código, Git e GitHub</b><br>
+        Git ≠ Github<br>
+        Versionamento (VCS)<br>
+        Git<br>
+        Gitub<br>
+        <b>Desenvolvedor Frontend - React</b> <br>
+        Biblioteca JavaScript para criar UI<br>
+        Casos de Uso<br>
+        JSX<br>
+        Elementos x Componentes<br>
+      </td>
+    </tr>
+    <tr>
+      <td>28/02/2023</td>
+      <td>
+        <b>Versionamento de código, Git e GitHub</b><br>
+        Criar repositório para exemplos React apresentados em aula;<br>
+        Criar repositório para o tutorial oficial do React;<br>
+        <a target="_blank" href="https://docs.google.com/spreadsheets/d/1mKQpj4GCeoUqLfigo70WoNKcaC9Hz_7fBrY5vDRyefw/edit#gid=0">
+          Repositórios dos Estudantes
+        </a><br>
+        <b>Desenvolvedor Frontend - React</b> <br>
+        Classes e Herança com JavaScript; <br>
+        Criar um projeto React (SPA); <br>
+      </td>
+    </tr>
+    <tr>
+      <td>01/03/2023</td>
+      <td>
+        <b>Versionamento de código, Git e GitHub</b><br>
+        Fluxo de trabalho básico do Git (pull -> status -> add -> commit -> push);<br>
+        <b>Desenvolvedor Frontend - React</b> <br>
+        1º Passo do tutorial do React; <br>
+      </td>
+    </tr>
+    <tr>
+      <td>08/03/2023</td>
+      <td>
+        <b>Versionamento de código, Git e GitHub</b><br>
+        .gitignore;<br>
+        Git clone e npm i (Recriar/atualizar a pasta node_modules);<br>
+        <b>Desenvolvedor Frontend - React</b> <br>
+        Componentes de Função X Componentes de Classe; <br>
+      </td>
+    </tr>
+    <tr>
+      <td>09/03/2023</td>
+      <td>
+        <b>Desenvolvedor Frontend - React</b> <br>
+        Ciclo de vida dos componentes; <br>
+        Propriedades - props; <br>
+        Estado - state; <br>
+      </td>
+    </tr>
+    <tr>
+      <td>10/03/2023</td>
+      <td>
+        <b>Desenvolvedor Frontend - React</b> <br>
+        Eslint; <br>
+        EditorConfig; <br>
+        Tailwind CSS; <br>
+        React Router; <br>
+      </td>
+    </tr>
+    <tr>
+      <td>13/03/2023</td>
+      <td>
+        <b>Desenvolvedor Frontend - React</b> <br>
+        React Hooks (useState, useEffect); <br>
+      </td>
+    </tr>
+    <tr>
+      <td>14/03/2023</td>
+      <td>
+        <b>Desenvolvedor Frontend - React</b> <br>
+        Prática - Tutorial React - Tic Tae Toe; <br>
+      </td>
+    </tr>
+    <tr>
+      <td>15/03/2023</td>
+      <td>
+        <b>Desenvolvedor Frontend - React</b> <br>
+         Prática - Rotas, Páginas e Componentes; <br>
+      </td>
+    </tr>
+  </tbody>
+<table>

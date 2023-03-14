@@ -4,9 +4,10 @@ import Timer from '../components/Timer';
 
 function HomePage() {
   return (
-    <div className='bg-gray-400 h-screen w-screen'>
+    <div className="bg-gray-400 h-screen w-screen">
       <Menu />
-      <Timer start={0} ms={1000} />;
+      <Timer start={0} ms={1000} />
+      ;
     </div>
   );
 }

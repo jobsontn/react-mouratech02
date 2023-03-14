@@ -6,7 +6,7 @@ function LoginPage() {
   return (
     <div>
       <Menu />
-      <div className='flex items-center justify-center'>
+      <div className="flex items-center justify-center">
         <Login />
       </div>
 
