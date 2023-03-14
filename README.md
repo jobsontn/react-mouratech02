@@ -19,11 +19,17 @@ Repositório de exemplo feitos em aulas na turma 02 do projeto MouraTech (Parcer
 
 ## Links Úteis
 
+### Site do React e do NEXT.js
+
 [React](https://pt-br.reactjs.org/)
 
 [NEXT.js](https://nextjs.org/)
 
+### Estilização
+
 [tailwindcss](https://tailwindcss.com/)
+
+### Bibliotecas para uso como React
 
 [React Icons](https://react-icons.github.io/react-icons/)
 
@@ -39,12 +45,14 @@ Repositório de exemplo feitos em aulas na turma 02 do projeto MouraTech (Parcer
 <table>
   <thead>
     <tr>
+      <th>#</th>
       <th>Data</th>
       <th>Conteúdo</th>
     </tr>
   </thead>
   <tbody>
     <tr>
+      <td>01</td>
       <td>27/02/2023</td>
       <td>
         <b>Versionamento de código, Git e GitHub</b><br>
@@ -60,6 +68,7 @@ Repositório de exemplo feitos em aulas na turma 02 do projeto MouraTech (Parcer
       </td>
     </tr>
     <tr>
+      <td>02</td>
       <td>28/02/2023</td>
       <td>
         <b>Versionamento de código, Git e GitHub</b><br>
@@ -74,6 +83,7 @@ Repositório de exemplo feitos em aulas na turma 02 do projeto MouraTech (Parcer
       </td>
     </tr>
     <tr>
+      <td>03</td>
       <td>01/03/2023</td>
       <td>
         <b>Versionamento de código, Git e GitHub</b><br>
@@ -83,6 +93,7 @@ Repositório de exemplo feitos em aulas na turma 02 do projeto MouraTech (Parcer
       </td>
     </tr>
     <tr>
+      <td>04</td>
       <td>08/03/2023</td>
       <td>
         <b>Versionamento de código, Git e GitHub</b><br>
@@ -93,6 +104,7 @@ Repositório de exemplo feitos em aulas na turma 02 do projeto MouraTech (Parcer
       </td>
     </tr>
     <tr>
+      <td>05</td>
       <td>09/03/2023</td>
       <td>
         <b>Desenvolvedor Frontend - React</b> <br>
@@ -102,6 +114,7 @@ Repositório de exemplo feitos em aulas na turma 02 do projeto MouraTech (Parcer
       </td>
     </tr>
     <tr>
+      <td>06</td>
       <td>10/03/2023</td>
       <td>
         <b>Desenvolvedor Frontend - React</b> <br>
@@ -112,6 +125,7 @@ Repositório de exemplo feitos em aulas na turma 02 do projeto MouraTech (Parcer
       </td>
     </tr>
     <tr>
+      <td>07</td>
       <td>13/03/2023</td>
       <td>
         <b>Desenvolvedor Frontend - React</b> <br>
@@ -119,6 +133,7 @@ Repositório de exemplo feitos em aulas na turma 02 do projeto MouraTech (Parcer
       </td>
     </tr>
     <tr>
+      <td>08</td>
       <td>14/03/2023</td>
       <td>
         <b>Desenvolvedor Frontend - React</b> <br>
@@ -126,6 +141,7 @@ Repositório de exemplo feitos em aulas na turma 02 do projeto MouraTech (Parcer
       </td>
     </tr>
     <tr>
+      <td>09</td>
       <td>15/03/2023</td>
       <td>
         <b>Desenvolvedor Frontend - React</b> <br>

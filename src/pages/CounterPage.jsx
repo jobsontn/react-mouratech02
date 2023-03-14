@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Menu from '../components/Menu';
 
-function Exemplo1() {
+function CounterPage() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -28,4 +28,4 @@ function Exemplo1() {
   );
 }
 
-export default Exemplo1;
+export default CounterPage;
