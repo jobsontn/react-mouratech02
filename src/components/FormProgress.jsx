@@ -3,24 +3,21 @@ import React from 'react';
 function FormProgress(props) {
   const { step = 1, steps = ['Matrícula', 'Dados Pessoais', 'Curso', 'Confirmação'] } = props;
 
-  const numberOne = <div className="flex items-center justify-center w-10 h-10 rounded-full bg-green-400/50 text-3xl">1</div>;
-
   const stepsNumbers = steps.reduce((total, currentValue, currentIndex) => {
     const bg = (step > currentIndex) ? 'bg-green-400/50' : 'bg-white';
-    if (currentIndex > 0) {
-      const line = <div className={`flex items-center justify-center w-10 h-2 text-3xl ${bg}`}>&nbsp;</div>;
-      const number = <div className={`flex items-center justify-center w-10 h-10 rounded-full text-3xl ${bg}`}>{currentIndex + 1}</div>;
-      const newTotal = (
-        <>
-          {total}
-          {line}
-          {number}
-        </>
-      );
-      return newTotal;
+    if (currentIndex === 0) {
+      return <div className={`flex items-center justify-center w-10 h-10 rounded-full text-3xl ${bg}`}>1</div>;
     }
-    return total;
-  }, numberOne);
+    const line = <div className={`flex items-center justify-center w-10 h-2 text-3xl ${bg}`}>&nbsp;</div>;
+    const number = <div className={`flex items-center justify-center w-10 h-10 rounded-full text-3xl ${bg}`}>{currentIndex + 1}</div>;
+    return (
+      <>
+        {total}
+        {line}
+        {number}
+      </>
+    );
+  }, '');
 
   const stepsTexts = steps.reduce((total, currentValue, currentIndex) => {
     if (currentIndex === 0) {
