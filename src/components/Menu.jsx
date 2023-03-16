@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaHome, FaUserAlt } from 'react-icons/fa';
 import { RxLapTimer } from 'react-icons/rx';
-import { TbNumbers } from 'react-icons/tb';
+import { TbNumbers, TbForms } from 'react-icons/tb';
 
 function Menu() {
   const [visible, setVisible] = useState(false);
@@ -42,6 +42,15 @@ function Menu() {
                 <TbNumbers />
                 {' '}
                 Contador
+              </span>
+            </NavLink>
+          </li>
+          <li className="h-8 leading-8">
+            <NavLink to="/form" className="nav-link">
+              <span className="flex flex-row gap-2 items-center">
+                <TbForms />
+                {' '}
+                Formulário
               </span>
             </NavLink>
           </li>
