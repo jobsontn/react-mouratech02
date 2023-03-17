@@ -3,9 +3,8 @@ import React from 'react';
 class Timer extends React.Component {
   constructor(props) {
     super(props);
-    const { start } = this.props;
     this.state = {
-      seconds: start,
+      seconds: 0,
     };
   }
 
@@ -30,13 +29,17 @@ class Timer extends React.Component {
     }));
   }
 
-  render() {
+  visor() {
     const { seconds } = this.state;
+    return `${seconds}`;
+  }
+
+  render() {
     return (
       <div className="bg-gray-400 rounded-2xl border-4 border-preto w-80 p-4 gap-4 flex flex-col m-4">
         <div className="bg-preto border-black rounded-xl flex flex-col justify-center items-center">
           <h1 className="text-5xl text-branco cronometro">
-            {seconds}
+            {this.visor()}
           </h1>
         </div>
         <div className="flex flex-row justify-around">
