@@ -1,7 +1,14 @@
 import React from 'react';
 
 function Form01(props) {
-  const { change } = props;
+  const { change, student, updateStudent } = props;
+
+  function onSubmit(e) {
+    e.preventDefault();
+    console.log(student);
+    change(2);
+  }
+
   return (
     <div className="border-2 bg-branco border-gray-300 rounded-lg h-full w-full sm:h-auto sm:w-80 md:w-96  p-8">
       <div>
@@ -14,10 +21,15 @@ function Form01(props) {
           Informe sua matrícula
         </h2>
       </div>
-      <form className="mt-8 space-y-6">
+      <form className="mt-8 space-y-6" onSubmit={onSubmit}>
         <div className="-space-y-px rounded-md shadow-sm">
           <div>
             <input
+              value={student.enrollment}
+              onChange={(e) => {
+                const newStudent = { ...student, enrollment: e.target.value };
+                updateStudent(newStudent);
+              }}
               id="enrollment"
               name="enrollment"
               type="text"
@@ -32,7 +44,6 @@ function Form01(props) {
         <div className="flex justify-end">
           <button
             type="submit"
-            onClick={() => change(2)}
             className="group relative flex w-24 justify-center rounded-md bg-azul py-2 px-3 text-sm font-semibold text-white hover:bg-azul/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul cursor-pointer"
           >
             Próximo

@@ -1,7 +1,24 @@
 import React from 'react';
 
 function Form04(props) {
-  const { change } = props;
+  const { change, student } = props;
+  const {
+    enrollment = '',
+    name = '',
+    birthday = '',
+    email = '',
+    cellphone = '',
+    university = '',
+    campus = '',
+    course = '',
+    currentPeriod = '',
+  } = student;
+
+  function onSubmit(e) {
+    e.preventDefault();
+    console.log(student);
+  }
+
   return (
     <div className="border-2 bg-branco border-gray-300 rounded-lg h-full w-full sm:h-auto sm:w-80 md:w-96  p-8">
       <div>
@@ -14,43 +31,43 @@ function Form04(props) {
           Confirme suas informações
         </h2>
       </div>
-      <form className="mt-8 space-y-6">
+      <form className="mt-8 space-y-6" onSubmit={onSubmit}>
         <div className="-space-y-px rounded-md shadow-sm">
           <p>
-            Matrícula:
-            <strong>&nbsp;</strong>
+            Matrícula:&nbsp;
+            <strong>{enrollment}</strong>
           </p>
           <p>
-            Nome:
-            <strong>&nbsp;</strong>
+            Nome:&nbsp;
+            <strong>{name}</strong>
           </p>
           <p>
-            Data de Nascimento:
-            <strong>&nbsp;</strong>
+            Data de Nascimento:&nbsp;
+            <strong>{birthday}</strong>
           </p>
           <p>
-            E-mail:
-            <strong>&nbsp;</strong>
+            E-mail:&nbsp;
+            <strong>{email}</strong>
           </p>
           <p>
-            Celular:
-            <strong>&nbsp;</strong>
+            Celular:&nbsp;
+            <strong>{cellphone}</strong>
           </p>
           <p>
-            Instituição:
-            <strong>&nbsp;</strong>
+            Instituição:&nbsp;
+            <strong>{university}</strong>
           </p>
           <p>
-            Campus:
-            <strong>&nbsp;</strong>
+            Campus:&nbsp;
+            <strong>{campus}</strong>
           </p>
           <p>
-            Curso:
-            <strong>&nbsp;</strong>
+            Curso:&nbsp;
+            <strong>{course}</strong>
           </p>
           <p>
-            Período:
-            <strong>&nbsp;</strong>
+            Período:&nbsp;
+            <strong>{currentPeriod}</strong>
           </p>
         </div>
 

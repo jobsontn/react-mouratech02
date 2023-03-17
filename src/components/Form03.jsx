@@ -1,7 +1,14 @@
 import React from 'react';
 
 function Form03(props) {
-  const { change } = props;
+  const { change, student, updateStudent } = props;
+
+  function onSubmit(e) {
+    e.preventDefault();
+    console.log(student);
+    change(4);
+  }
+
   return (
     <div className="border-2 bg-branco border-gray-300 rounded-lg h-full w-full sm:h-auto sm:w-80 md:w-96  p-8">
       <div>
@@ -14,10 +21,15 @@ function Form03(props) {
           Instituição / Curso
         </h2>
       </div>
-      <form className="mt-8 space-y-6">
+      <form className="mt-8 space-y-6" onSubmit={onSubmit}>
         <div className="-space-y-px rounded-md shadow-sm">
           <div>
             <input
+              value={student.university}
+              onChange={(e) => {
+                const newStudent = { ...student, university: e.target.value };
+                updateStudent(newStudent);
+              }}
               id="university"
               name="university"
               type="text"
@@ -29,6 +41,11 @@ function Form03(props) {
           </div>
           <div>
             <input
+              value={student.campus}
+              onChange={(e) => {
+                const newStudent = { ...student, campus: e.target.value };
+                updateStudent(newStudent);
+              }}
               id="campus"
               name="campus"
               type="text"
@@ -40,6 +57,11 @@ function Form03(props) {
           </div>
           <div>
             <input
+              value={student.course}
+              onChange={(e) => {
+                const newStudent = { ...student, course: e.target.value };
+                updateStudent(newStudent);
+              }}
               id="course"
               name="course"
               type="text"
@@ -51,6 +73,11 @@ function Form03(props) {
           </div>
           <div>
             <input
+              value={student.currentPeriod}
+              onChange={(e) => {
+                const newStudent = { ...student, currentPeriod: e.target.value };
+                updateStudent(newStudent);
+              }}
               id="currentPeriod"
               name="currentPeriod"
               type="text"
@@ -72,7 +99,6 @@ function Form03(props) {
           </button>
           <button
             type="submit"
-            onClick={() => change(4)}
             className="group relative flex w-24 justify-center rounded-md bg-azulEscuro py-2 px-3 text-sm font-semibold text-white hover:bg-azulEscuro/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azulEscuro cursor-pointer"
           >
             Próximo
