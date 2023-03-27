@@ -4,14 +4,19 @@ function Form04(props) {
   const { change, student } = props;
   const {
     enrollment = '',
+    cpf = '',
     name = '',
+    motherName = '',
+    fatherName = '',
     birthday = '',
+    gender = 'Masculino',
     email = '',
     cellphone = '',
-    university = '',
-    campus = '',
-    course = '',
+    githubProfile = '',
+    campusName = '',
+    courseName = '',
     currentPeriod = '',
+    group = '',
   } = student;
 
   function onSubmit(e) {
@@ -38,12 +43,28 @@ function Form04(props) {
             <strong>{enrollment}</strong>
           </p>
           <p>
+            CPF:&nbsp;
+            <strong>{cpf}</strong>
+          </p>
+          <p>
             Nome:&nbsp;
             <strong>{name}</strong>
           </p>
           <p>
+            Nome da Mãe:&nbsp;
+            <strong>{motherName}</strong>
+          </p>
+          <p>
+            Nome do Pai:&nbsp;
+            <strong>{fatherName}</strong>
+          </p>
+          <p>
             Data de Nascimento:&nbsp;
             <strong>{birthday}</strong>
+          </p>
+          <p>
+            Sexo:&nbsp;
+            <strong>{gender}</strong>
           </p>
           <p>
             E-mail:&nbsp;
@@ -54,20 +75,24 @@ function Form04(props) {
             <strong>{cellphone}</strong>
           </p>
           <p>
-            Instituição:&nbsp;
-            <strong>{university}</strong>
+            Perfil do GitHub:&nbsp;
+            <strong>{githubProfile}</strong>
           </p>
           <p>
             Campus:&nbsp;
-            <strong>{campus}</strong>
+            <strong>{campusName}</strong>
           </p>
           <p>
             Curso:&nbsp;
-            <strong>{course}</strong>
+            <strong>{courseName}</strong>
           </p>
           <p>
             Período:&nbsp;
             <strong>{currentPeriod}</strong>
+          </p>
+          <p>
+            Turma:&nbsp;
+            <strong>{group}</strong>
           </p>
         </div>
 

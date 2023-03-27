@@ -25,25 +25,9 @@ function Form03(props) {
         <div className="-space-y-px rounded-md shadow-sm">
           <div>
             <input
-              value={student.university}
+              value={student.campusName}
               onChange={(e) => {
-                const newStudent = { ...student, university: e.target.value };
-                updateStudent(newStudent);
-              }}
-              id="university"
-              name="university"
-              type="text"
-              autoComplete="university"
-              required
-              className="relative block w-full rounded-t-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-azul2 sm:text-sm sm:leading-6 px-2"
-              placeholder="Instituição"
-            />
-          </div>
-          <div>
-            <input
-              value={student.campus}
-              onChange={(e) => {
-                const newStudent = { ...student, campus: e.target.value };
+                const newStudent = { ...student, campusName: e.target.value };
                 updateStudent(newStudent);
               }}
               id="campus"
@@ -51,15 +35,15 @@ function Form03(props) {
               type="text"
               autoComplete="campus"
               required
-              className="relative block w-full border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-azul2 sm:text-sm sm:leading-6 px-2"
-              placeholder="Campus / Cidade"
+              className="relative block w-full rounded-t-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-azul2 sm:text-sm sm:leading-6 px-2"
+              placeholder="Campus"
             />
           </div>
           <div>
             <input
-              value={student.course}
+              value={student.courseName}
               onChange={(e) => {
-                const newStudent = { ...student, course: e.target.value };
+                const newStudent = { ...student, courseName: e.target.value };
                 updateStudent(newStudent);
               }}
               id="course"
@@ -83,8 +67,24 @@ function Form03(props) {
               type="text"
               autoComplete="currentPeriod"
               required
-              className="relative block w-full rounded-b-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-azul2 sm:text-sm sm:leading-6 px-2"
+              className="relative block w-full border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-azul2 sm:text-sm sm:leading-6 px-2"
               placeholder="Período"
+            />
+          </div>
+          <div>
+            <input
+              value={student.group}
+              onChange={(e) => {
+                const newStudent = { ...student, group: e.target.value };
+                updateStudent(newStudent);
+              }}
+              id="group"
+              name="group"
+              type="text"
+              autoComplete="group"
+              required
+              className="relative block w-full rounded-b-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-azul2 sm:text-sm sm:leading-6 px-2"
+              placeholder="Turma"
             />
           </div>
         </div>

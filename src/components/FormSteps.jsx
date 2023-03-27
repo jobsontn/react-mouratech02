@@ -9,14 +9,19 @@ function FormSteps() {
   const [step, setStep] = useState(1);
   const [student, setStudent] = useState({
     enrollment: '',
+    cpf: '',
     name: '',
+    motherName: '',
+    fatherName: '',
     birthday: '',
+    gender: 'Masculino',
     email: '',
     cellphone: '',
-    university: '',
-    campus: '',
-    course: '',
+    githubProfile: '',
+    campusName: '',
+    courseName: '',
     currentPeriod: '',
+    group: '',
   });
 
   const chooseForm = () => {

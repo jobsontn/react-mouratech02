@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { FaHome, FaUserAlt } from 'react-icons/fa';
 import { RxLapTimer } from 'react-icons/rx';
 import { TbNumbers, TbForms } from 'react-icons/tb';
+import { AiFillGithub } from 'react-icons/ai';
 
 function Menu() {
   const [visible, setVisible] = useState(false);
@@ -51,6 +52,15 @@ function Menu() {
                 <TbForms />
                 {' '}
                 Formulário
+              </span>
+            </NavLink>
+          </li>
+          <li className="h-8 leading-8">
+            <NavLink to="/github" className="nav-link">
+              <span className="flex flex-row gap-2 items-center">
+                <AiFillGithub />
+                {' '}
+                GitHub
               </span>
             </NavLink>
           </li>
